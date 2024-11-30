@@ -29,9 +29,9 @@ def generate_otp():
     return str(random.randint(100000, 999999))
 
 def send_otp(phone_number):
-    account_sid = os.getenv("TWILIO_ACCOUNT_SID", "---")
-    auth_token = os.getenv("TWILIO_AUTH_TOKEN", "---")
-    twilio_phone_number = os.getenv("TWILIO_PHONE_NUMBER", "---")  
+    account_sid = os.getenv("TWILIO_ACCOUNT_SID", "enter_ur_acc_sid")
+    auth_token = os.getenv("TWILIO_AUTH_TOKEN", "enter_ur_auth_token")
+    twilio_phone_number = os.getenv("TWILIO_PHONE_NUMBER", "enter_twilio_phn_num")  
 
    
     otp = generate_otp()
